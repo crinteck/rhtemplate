@@ -1,0 +1,41 @@
+// X-Small devices (portrait phones, less than 576px)
+@mixin for-small-device {
+    @media (max-width: 575.98px) {
+        @content;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@mixin for-small-landscape-device {
+    @media (max-width: 767.98px) {
+        @content;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin for-medium-device {
+    @media (max-width: 991.98px) {
+        @content;
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@mixin for-large-device {
+    @media (max-width: 1199.98px) {
+        @content;
+    }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin for-xl-large-device {
+    @media (max-width: 1399.98px) {
+        @content;
+    }
+}
+
+// general small devices
+@mixin for-only-small-device {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
