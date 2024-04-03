@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://rhforce.local/public/assets/semantic-ui/semantic.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="http://rhforce.local/public/assets/semantic-ui/dataTables.semanticui.min.css">
+    <link rel="stylesheet" href="http://rhforce.local/public/assets/semantic-ui/semantic.amazon.min.css">
+    <link rel="stylesheet" href="http://rhforce.local/public/assets/styles/base.css">
+    <script src="http://rhforce.local/public/assets/js/jquery-3.7.1.min.js"></script>
+    <script src="http://rhforce.local/public/assets/semantic-ui/js/semantic.min.js"></script>
+    <script src="http://rhforce.local/public/assets/semantic-ui/js/jquery.dataTables.min.js" defer></script>
+    <script src="http://rhforce.local/public/assets/semantic-ui/js/dataTables.semanticui.min.js" defer></script>
+    <script src="http://rhforce.local/public/assets/echarts-5.4.3/echarts.min.js"></script>
+    <script src="http://rhforce.local/public/assets/js/base.js"></script>
+    <link rel="stylesheet" href="http://rhforce.local/public/assets/styles/output.css" />
+    <title>RHForce</title>
+</head>
+
+<body>
+
+    <div class="pusher">
+        <!-- Ajouter un menu fixe avec Semantic UI -->
+        <div class="ui back-office top fixed borderless menu">
+            <div class="ui row">
+                <a href="#" class="header item">
+                    <div class="ui header">
+                        RHForce
+                    </div>
+                </a>
+                <div class="right menu">
+
+                    <div class="ui simple dropdown item">
+                        <i class="user icon"></i>
+                        <span>
+                            dev@crinteck.com </span>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+
+                            <a class="item" href="http://rhforce.local/auth/logout">
+                                <i class="sign out icon"></i>
+                                Deconnexion
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="item" id="toggle-sidebar">
+                        <i class="sidebar icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="ui content-block row" style="padding-top: 53px;">
+            <div id="toc">
+                <div class="ui accordion vertical fluid menu">
+                    <a href="http://rhforce.local/dashboard" class="item font-extrabold">
+                        <i class="chart line icon"></i>
+                        Tableau de bord
+                    </a>
+
+                    <a href="http://rhforce.local/employees" class="item">
+                        <i class="users icon"></i>
+                        Gestion des Employés
+                    </a>
+
+                    <a href="http://rhforce.local/admin/departments" class="item">
+                        <i class="building icon"></i>
+                        Départements
+                    </a>
+
+                    <a href="http://rhforce.local/roles" class="item">
+                        <i class="spy icon"></i>
+                        Rôles
+                    </a>
+
+                    <a href="http://rhforce.local/payroll" class="item">
+                        <i class="money bill alternate icon"></i>
+                        Paie
+                    </a>
+
+                    <a href="http://rhforce.local/leave-requests" class="item">
+                        <i class="calendar alternate icon"></i>
+                        Congés
+                    </a>
+
+                    <a href="http://rhforce.local/performance-reviews" class="item">
+                        <i class="chart bar icon"></i>
+                        Performances
+                    </a>
+
+                    <a href="http://rhforce.local/training" class="item">
+                        <i class="university icon"></i>
+                        Formations
+                    </a>
+
+                    <a href="http://rhforce.local/attendance" class="item">
+                        <i class="clock icon"></i>
+                        Présences
+                    </a>
+
+                    <!-- Only show admin items if the user is an admin -->
+
+                    <div class="title item">
+                        <i class="dropdown icon" style="float: right"></i>
+                        <i class="chart pie icon" style="float: left"></i>
+                        Rapports et Analytics
+                    </div>
+                    <div class="content">
+                        <div class="menu">
+                            <a href="http://rhforce.local/reports/employee-analytics" class="item">
+                                Analytics Employés
+                            </a>
+                            <a href="http://rhforce.local/reports/payroll-analytics" class="item">
+                                Analytics Paie
+                            </a>
+                            <!-- Add more as needed -->
+                        </div>
+                    </div>
+
+                    <!-- Other necessary items -->
+                    <a href="http://rhforce.local/settings" class="item">
+                        <i class="cogs icon"></i>
+                        Paramètres
+                    </a>
+                </div>
+            </div>
+            <div id="page-content" class="ui grid">
+                <div class="ui sixteen wide column">
+
+
+
+
+                    <div class="ui header">Dashboard</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
