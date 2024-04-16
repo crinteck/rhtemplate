@@ -1,0 +1,12 @@
+{
+  "name": "tailwind-template",
+  "description": "tailwind template starter",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./public/assets/styles/input.css -o ./public/assets/styles/output.css --watch",
+    "build": "npx tailwindcss -i ./public/assets/styles/input.css -o ./public/assets/styles/output.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
